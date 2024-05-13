@@ -1,27 +1,31 @@
-import speech_recognition
-import pyttsx3
-import requests
-import nltk
-import datetime
+import speech_recognition           # Library for Voice Recoginition
+import pyttsx3                      # Text to speech library
+import requests                     # used to request the current lcoation online
+import nltk                         # NLP library
+import datetime                     # date and time library
 
-from nltk.tokenize import *
+from nltk.tokenize import *         
 from nltk.stem     import *
 from nltk.corpus   import *
 
 from speech_recognition.recognizers import *
 
-tts_engine = pyttsx3.init()
-
-# text_speech = "dictionary mode"
+tts_engine = pyttsx3.init()         # initialize the text to speech library
 
 
+                                    # main function of the entire system
 class MAIN:
+
+                                    # contructor 
     def __init__(self):
         self.voice      = ""
         self.arr_t      = []
         self.w_stop     = set(stopwords.words('english'))
 
+                                    # start function
     def START(self):
+                                    # tokenize the words or text recieve
+                                    
         self.arr_t      = word_tokenize(self.voice.lower())
         LOCATION_KEYWORDS = ['location', 'locate', 'local', 'city', 'town', 'area']
         TIME_KEYWORDS     = ['time', 'clock']
