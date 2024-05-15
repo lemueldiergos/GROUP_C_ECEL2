@@ -1,3 +1,5 @@
+<h2>ECEL 2 - Group C - OUTPUT</h2>
+
 **Language Used:**
 
 **Python** - Python is a high-level, interpreted programming language known for its easy-to-read syntax and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used for web development, data analysis, artificial intelligence, scientific computing, and more
